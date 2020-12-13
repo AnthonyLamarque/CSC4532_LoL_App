@@ -52,8 +52,8 @@ public class AsyncJSONDataForListHistorique extends AsyncTask<String, Void, JSON
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
                 }
             });
             cancel(true);
@@ -62,8 +62,8 @@ public class AsyncJSONDataForListHistorique extends AsyncTask<String, Void, JSON
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
                 }
             });
             cancel(true);
