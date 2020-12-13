@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoL_App</string>
+    <string name="welcome">Bienvenue sur votre application League of Legends</string>
+    <string name="main_champions">Liste des champions</string>
+    <string name="main_items">Historique d\'un joueur</string>
+    <string name="list_c_text">Recherche dans la liste des champions :</string>
+    <string name="list_c_edit">Nom du Champion</string>
+    <string name="list_h_text">Recherche de l\'historique d\'un joueur :</string>
+    <string name="list_h_edit">Nom du Joueur</string>
+    <string name="button_hist">Chercher son historique</string>
+</resources>
