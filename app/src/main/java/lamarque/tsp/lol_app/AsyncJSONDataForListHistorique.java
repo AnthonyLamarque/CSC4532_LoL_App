@@ -49,9 +49,23 @@ public class AsyncJSONDataForListHistorique extends AsyncTask<String, Void, JSON
             }
         } catch (MalformedURLException e) {
             e.printStackTrace();
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                }
+            });
             cancel(true);
         } catch (IOException | JSONException e) {
             e.printStackTrace();
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant", Toast.LENGTH_LONG).show();
+                }
+            });
             cancel(true);
         }
         return res;
