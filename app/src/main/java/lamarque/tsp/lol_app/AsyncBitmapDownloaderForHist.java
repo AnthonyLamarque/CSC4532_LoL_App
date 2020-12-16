@@ -51,6 +51,7 @@ public class AsyncBitmapDownloaderForHist extends AsyncTask<String, Void, Bitmap
 
     protected void onPostExecute(Bitmap bitmap) {
        this.adapter.vectorimage.add(bitmap);
+       adapter.notifyDataSetChanged();
 
     }
 

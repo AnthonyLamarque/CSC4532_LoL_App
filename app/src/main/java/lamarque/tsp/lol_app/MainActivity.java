@@ -32,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonfav = (Button) findViewById(R.id.buttonfav);
+        buttonfav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent favoris = new Intent(getApplicationContext(), Favoris.class);
+                startActivity(favoris);
+            }
+        });
+
     }
 }

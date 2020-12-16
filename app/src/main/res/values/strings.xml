@@ -8,4 +8,7 @@
     <string name="list_h_text">Recherche de l\'historique d\'un joueur :</string>
     <string name="list_h_edit">Nom du Joueur</string>
     <string name="button_hist">Chercher son historique</string>
+    <string name="button_hist_fav">Favori</string>
+    <string name="button_fav">Joueurs favoris</string>
+    <string name="text_fav">Liste de vos joueurs favoris :</string>
 </resources>

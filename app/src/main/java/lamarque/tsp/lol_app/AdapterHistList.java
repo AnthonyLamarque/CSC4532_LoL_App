@@ -64,7 +64,7 @@ public class AdapterHistList extends BaseAdapter {
 
 
         ImageView image = (ImageView) convertView.findViewById(R.id.imageChampion);
-        if (this.vectorimage.get(position) != null) {
+        if (this.vectorimage.size() != 0) {
             image.setImageBitmap(this.vectorimage.get(position));
         }
 

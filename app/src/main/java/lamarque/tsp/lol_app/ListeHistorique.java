@@ -32,8 +32,10 @@ public class ListeHistorique extends AppCompatActivity implements AdapterView.On
             edithisto.setText(textpartie);
             Toast.makeText(getApplicationContext(), "Chargement de l'historique...", Toast.LENGTH_LONG).show();
             AdapterHistList adapter = new AdapterHistList();
+
+            String playertrue = textpartie.replaceAll(" ", "%20");
             AsyncJSONDataForListHistorique a = new AsyncJSONDataForListHistorique(activity, adapter);
-            a.execute("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + textpartie + "?api_key=" + Api.API_KEY);
+            a.execute("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + playertrue + "?api_key=" + Api.API_KEY);
             adapter.notifyDataSetChanged();
         }
 
@@ -49,13 +51,26 @@ public class ListeHistorique extends AppCompatActivity implements AdapterView.On
                 Toast.makeText(v.getContext(), "Chargement de l'historique...", Toast.LENGTH_LONG).show();
                 AdapterHistList adapter = new AdapterHistList();
                 EditText edithist =  (EditText) findViewById(R.id.SearchHist);
-                Editable player = edithist.getText();
+                String player = edithist.getText().toString();
+                String playertrue = player.replaceAll(" ", "%20");
                 AsyncJSONDataForListHistorique a = new AsyncJSONDataForListHistorique(activity, adapter);
-                a.execute("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + player + "?api_key=" + Api.API_KEY);
+                a.execute("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + playertrue + "?api_key=" + Api.API_KEY);
                 adapter.notifyDataSetChanged();
 
             }
         });
+
+        Button bFav = (Button) findViewById(R.id.buttonhistfav);
+        MyDatabase mydb = new MyDatabase(this);
+        bFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText edithist = (EditText) findViewById(R.id.SearchHist);
+                mydb.insertData(edithist.getText());
+                Toast.makeText(activity.getApplicationContext(), "Ajouté au favori !", Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
     @Override

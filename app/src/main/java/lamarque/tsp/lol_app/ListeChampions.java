@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListeChampions extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -17,7 +18,7 @@ public class ListeChampions extends AppCompatActivity implements AdapterView.OnI
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_liste_champions);
-
+        Toast.makeText(getApplicationContext(), "Chargement de la liste...", Toast.LENGTH_LONG).show();
         AdapterChampList adapter = new AdapterChampList();
         ListView list = (ListView) findViewById(R.id.listChampions);
         list.setOnItemClickListener(this);

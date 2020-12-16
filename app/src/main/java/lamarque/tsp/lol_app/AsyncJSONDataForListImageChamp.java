@@ -69,11 +69,10 @@ public class AsyncJSONDataForListImageChamp extends AsyncTask<String, Void, JSON
                 System.out.println(idChamp);
                 System.out.println(res4);
                 if (res4 == idChamp) {
-                    System.out.println("c'est game");
                     String name = res3.getString("id");
                     AsyncBitmapDownloaderForHist b = new AsyncBitmapDownloaderForHist(activity, adapter);
                     b.execute("http://ddragon.leagueoflegends.com/cdn/10.24.1/img/champion/" + name + ".png");
-                    b.get(2000, TimeUnit.MILLISECONDS);
+                    b.get(5000, TimeUnit.MILLISECONDS);
                     break;
                 }
 

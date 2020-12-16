@@ -53,7 +53,7 @@ public class AdapterChampList extends BaseAdapter {
 
         ImageView imageView = (ImageView) convertView.findViewById(R.id.imagelistChampions);
 
-        if (this.vectorimage.get(position) != null) {
+        if (this.vectorimage.size() != 0) {
             imageView.setImageBitmap(this.vectorimage.get(position));
         }
 

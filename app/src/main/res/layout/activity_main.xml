@@ -41,5 +41,11 @@
             android:layout_height="wrap_content"
             android:text="@string/main_champions" />
 
+        <Button
+            android:id="@+id/buttonfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_fav" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

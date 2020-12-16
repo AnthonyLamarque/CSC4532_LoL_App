@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoL_App">
-        <activity android:name=".Partie"></activity>
+        <activity android:name=".Favoris"></activity>
+        <activity android:name=".Partie" />
         <activity android:name=".ListeHistorique" />
         <activity android:name=".Champion" />
         <activity android:name=".ListeChampions" />

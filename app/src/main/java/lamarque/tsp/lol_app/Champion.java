@@ -25,6 +25,9 @@ public class Champion extends AppCompatActivity {
         champName.setText(name);
         champImage.setImageBitmap(bitmap);
 
+        AsyncJSONDataForChamp a = new AsyncJSONDataForChamp(this, name);
+        a.execute("http://ddragon.leagueoflegends.com/cdn/10.25.1/data/fr_FR/champion/" + name + ".json");
+
 
 
     }

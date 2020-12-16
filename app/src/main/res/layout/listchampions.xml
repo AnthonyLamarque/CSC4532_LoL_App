@@ -10,7 +10,8 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
-        android:translationX="10dp">
+        android:translationX="5dp"
+        tools:layout_editor_absoluteX="10dp">
 
         <ImageView
             android:id="@+id/imagelistChampions"

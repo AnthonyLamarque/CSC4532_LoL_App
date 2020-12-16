@@ -30,12 +30,26 @@
             android:hint="@string/list_h_edit"
             android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/buttonlistHist"
-            android:layout_width="354dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/button_hist" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonlistHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/button_hist" />
+
+            <Button
+                android:id="@+id/buttonhistfav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_hist_fav"
+                android:translationX="5dp" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listHist"

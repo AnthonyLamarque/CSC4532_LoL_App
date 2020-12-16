@@ -69,7 +69,7 @@ public class AsyncJSONDataForListChamp extends AsyncTask<String, Void, JSONObjec
 
                 AsyncBitmapDownloader b = new AsyncBitmapDownloader(activity, adapter);
                 b.execute("http://ddragon.leagueoflegends.com/cdn/10.24.1/img/champion/" + res4 + ".png");
-                b.get(1000, TimeUnit.MILLISECONDS);
+                b.get(5000, TimeUnit.MILLISECONDS);
 
 
                 Log.i("JFL", "Adding to adapter name : " + res4);
