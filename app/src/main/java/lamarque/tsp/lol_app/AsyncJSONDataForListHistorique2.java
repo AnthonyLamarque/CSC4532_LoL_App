@@ -54,8 +54,8 @@ public class AsyncJSONDataForListHistorique2 extends AsyncTask<String, Void, JSO
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue\n(L'APIKEY expire toutes les 24h)", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue\n(L'APIKEY expire toutes les 24h)", Toast.LENGTH_LONG).show();
                 }
             });
             cancel(true);
@@ -64,8 +64,8 @@ public class AsyncJSONDataForListHistorique2 extends AsyncTask<String, Void, JSO
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
-                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue\n(L'APIKEY expire toutes les 24h)", Toast.LENGTH_LONG).show();
+                    Toast.makeText(activity.getApplicationContext(), "Pseudo inexistant ou API issue\n(L'APIKEY expire toutes les 24h)", Toast.LENGTH_LONG).show();
                 }
             });
             cancel(true);
